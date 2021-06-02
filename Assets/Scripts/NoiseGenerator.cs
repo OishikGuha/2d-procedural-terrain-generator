@@ -11,6 +11,8 @@ public class NoiseGenerator : MonoBehaviour
 
     public int noiseResolution = 10;
 
+    public Vector2 offset;
+
     public List<ColorSetter> colorSetters;
 
     Texture2D tex;
@@ -52,7 +54,7 @@ public class NoiseGenerator : MonoBehaviour
         {        
             for (int y = 0; y < resolution; y++)
             {
-                tex.SetPixel(x, y, Color.white * Mathf.PerlinNoise(x * step * noiseResolution, y * step * noiseResolution));
+                tex.SetPixel(x, y, Color.white * Mathf.PerlinNoise(x * step * noiseResolution + offset.x, y * step * noiseResolution + offset.y));
             }
         }
         tex.Apply();

@@ -221,6 +221,7 @@ MonoBehaviour:
   sr: {fileID: 141649014}
   resolution: 64
   noiseResolution: 10
+  offset: {x: 0, y: 0}
   colorSetters:
   - minValue: 0.36
     maxValue: 0.5
@@ -238,7 +239,7 @@ MonoBehaviour:
     maxValue: 0.91
     color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   - minValue: 0.84
-    maxValue: 0.91
+    maxValue: 1
     color: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
 --- !u!1 &519420028
 GameObject:
